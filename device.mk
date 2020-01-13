@@ -93,9 +93,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa
 ### End Ubuntu Touch ###
 
-# DRM
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
+# for off charging mode
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Ebtables
 PRODUCT_PACKAGES += \

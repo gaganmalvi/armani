@@ -89,6 +89,9 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
 # Headers
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# Ubuntu
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/huawei/angler/charger/images
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_armani
 TARGET_RECOVERY_DEVICE_MODULES := libinit_armani
