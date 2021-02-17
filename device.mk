@@ -25,6 +25,11 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# Halium
+PRODUCT_PACKAGES += \
+    libaudioflingerglue \
+    libdroidmedia
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
