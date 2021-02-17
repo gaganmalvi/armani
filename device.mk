@@ -25,10 +25,13 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-# Halium
+# Ubuntu Touch additional packages
 PRODUCT_PACKAGES += \
+    libmedia_compat_layer \
+    minimediaservice \
     libaudioflingerglue \
-    libdroidmedia
+    libminisf \
+    miniafservice
 
 # ANT+
 PRODUCT_PACKAGES += \
