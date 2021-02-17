@@ -100,7 +100,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/70-armani.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/70-armani.rules:system/halium/usr/lib/lxc-android-config/70-armani.rules \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
-    $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa
+    $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server
+
+#Ubuntu Touch: USB port handling
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/usb/setupusb:system/halium/usr/share/usbinit/setupusb \
+    $(LOCAL_PATH)/ubuntu/usb/mtp-state.conf:system/halium/etc/init/mtp-state.conf
+
 ### End Ubuntu Touch ###
 
 # for off charging mode
