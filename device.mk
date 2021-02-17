@@ -33,6 +33,8 @@ PRODUCT_PACKAGES += \
     libminisf \
     miniafservice
 
+MINIMEDIA_SENSORSERVER_DISABLE := 1
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
